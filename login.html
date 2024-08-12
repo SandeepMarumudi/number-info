@@ -36,10 +36,10 @@
            }
            arr.push(obj)
            localStorage.setItem("log",JSON.stringify(arr))
-           if(username==""){
+           if(e.target[0].value==""){
             alert("Enter username")
            }
-           else if(password==""){
+           else if(e.target[1].value==""){
               alert("Enter password")
            }
            else{
