@@ -27,7 +27,6 @@
     </div>
     <script>
         let login=document.forms[0]
-        console.log(login);
         arr=[]
         login.addEventListener("submit",function(e){
            e.preventDefault()
@@ -37,8 +36,13 @@
            }
            arr.push(obj)
            localStorage.setItem("log",JSON.stringify(arr))
-           let login=confirm("succesfully logined")
-           if(login){
+           if(username==""){
+            alert("Enter username")
+           }
+           else if(password==""){
+              alert("Enter password")
+           }
+           else{
             window.location.assign("./facts.html")
            }
         })
