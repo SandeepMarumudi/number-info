@@ -1,0 +1,353 @@
+/* login page */
+#login {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+#login form {
+  display: flex;
+  flex-direction: column;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#login input[type="text"]:focus,
+#login input[type="password"]:focus {
+  border-color: #9b59b6;
+}
+
+#login input[type="submit"] {
+  background-color: #9b59b6;
+  color: white;
+  padding: 12px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 130px;
+}
+
+#login input[type="submit"]:hover {
+  background-color: #8e44ad;
+
+}
+@media (max-width:480px) {
+  #login{
+    max-width: 150px;
+    height: 180px;
+  }
+ #login input[type="submit"]{
+  width: 90px;
+ }
+}
+/* facts.html */
+.hi{
+  margin-top: 100px;
+
+
+}
+.nav2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center !important;
+  gap: 30%;  
+}
+.fact{
+  display: flex;
+  gap: 30%;
+}
+
+input[type="text"] {
+padding: 10px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+input[type="submit"] {
+padding: 10px 20px;
+font-size: 16px;
+background-color: #4caf50;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+input[type="submit"]:hover {
+background-color: #45a049;
+}
+#result1,
+#result2,
+#result3,
+#result4,
+#result5 {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 30%;
+height: 300px;
+margin-top: 66px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+#result1 {
+background-color: #f9f9f9;
+color: #333;
+}
+#result2 {
+background-color: #f0f8ff;
+color: #333;
+}
+#result3 {
+background-color: #f9f9f9;
+color: #333;
+}
+#result4 {
+background-color: #fff0f5;
+color: #333;
+}
+#result5 {
+background-color: #fff0f5;
+color: #333;
+margin-right: 100px;
+}
+.card{
+display: none;
+}
+.no{
+display: flex;
+gap: 10%;
+margin-bottom: 50px;
+}
+.car{
+border: 1px solid;
+border-radius: 15px;
+box-shadow: 5px 5px 15px ;
+border: none;
+height: 300px;
+margin-top: 66px;
+margin-left: 250px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 25%;
+text-align: center;
+}
+.form-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+input[type="text"] {
+margin-bottom: 20px;
+padding: 10px;
+width: 200px;
+}
+
+button {
+padding: 10px 20px;
+cursor: pointer;
+}
+h1{
+margin-top: 40px;
+}
+#random{
+width: 70%;
+margin-left: 40px;
+}
+
+
+.staticpics {
+  display: grid;
+  grid-template-columns: repeat(2, 0.4fr);
+  row-gap: 20px;
+  padding: 20px;
+  margin-left: 250px;
+}
+.pic img {
+  width: 300px;
+  height: 250px;
+  display: block;
+  border-radius: 8px;
+   margin:   auto;
+}
+.pic img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+.navbar .user img{
+  width: 30px ;
+  height: 30px;
+}
+/* Ensure proper spacing and layout on mobile */
+@media (max-width: 480px) {
+  body{
+    overflow: scroll!important;
+  }
+  .nav2 {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .fact {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+  }
+  .no {
+      flex-direction: column;
+      gap: 20px; 
+  }
+
+  .car {
+    height: 200px;
+      width: 90%;
+      margin: 20px auto; /* Center and add margin for spacing */
+      box-shadow: 3px 3px 10px; /* Slightly reduced shadow */
+  }
+
+  .car h1 {
+      font-size: 18px;
+      margin-top: 20px;
+  }
+
+  .form-container {
+      height: auto;
+      padding: 10px; /* Add padding for better spacing */
+  }
+
+  input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+    
+  
+  }
+
+  input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      margin-bottom: 20px;
+  }
+
+  #result1, #result2, #result3, #result4, #result5 {
+      width: 90%;
+      margin: 0px 10px auto;
+      height: auto; /* Flexible height based on content */
+      min-height: 100px; /* Ensure enough space for content */
+  }
+
+  .navbar-brand {
+      font-size: 20px;
+  }
+
+  
+
+  .navbar-toggler {
+      margin-right: 10px;
+  }
+
+  .offcanvas-header .btn-close {
+      margin-right: 10px;
+  } 
+  #random{
+    width: 70%;
+    margin-left: 35px;
+  }
+  .staticpics{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .pic img {
+    width: 200px;
+    height: 150px;
+    
+  }
+  
+}
+
+  body{
+            overflow:scroll;
+            /* margin: 0;
+            padding: 0; */
+            height: 100vh;
+        }
+        .container video{
+            object-fit: cover;
+        }
+        .container{
+           position: relative;
+           height: 100vh;
+        }
+        .container button{
+            position: absolute; 
+            right: 10%;
+            top: 15%;
+            width:10% ;
+            height: 10%;
+            border-radius: 20px;
+            border: none;
+            box-shadow:5px 5px 8px;
+            font-size:large;
+            z-index: 1;
+        }
+
+@media (max-width: 480px) {
+   .container button {
+      right: 4%;
+      width: 24%;
+      height: 9%;
+      font-size: small;
+  }
+  .container video{
+    height: 100vh;
+  }
+}
+     
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number facts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <img src="https://media.istockphoto.com/id/1419501968/vector/fun-fact-label-light-bulb-vector-stock-illustration.jpg?s=612x612&w=0&k=20&c=JtWUw6Tc65TpeJXft3t6hRc0pW-Mawfq8kLMyFboppw=" width="100px" height="60px">
+          <div class="user">
+            <img src="./profile.png">
+            <span id="name"></span>
+          </div>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Facts</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class=" offcanvas-body" style=" cursor: pointer;">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              
+                <li>
+                    <p class="num">Number</p>
+                </li>
+                <li>
+                    <p class="yea">Year</p>
+                </li>
+                <li>
+                    <p class="tri">Trivia</p>
+                </li>
+                <li>
+                    <p class="da">Day</p>
+                </li>
+                <li>
+                    <p class="ran">Random</p>
+                </li>
+              
+            </div>
+          </div> -->
+        </div>
+      </nav>
+
+      <nav class=" hi navbar navbar-expand-lg bg-body-tertiary  ">
+        <div class=" nav2 container-fluid">
+          <a class="navbar-brand" href="#">Facts</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class=" fact navbar-nav">
+              <a class="nav-link active num"   aria-current="page" href="#">Number</a>
+              <a class="nav-link active da" href="#">Day</a>
+              <a class="nav-link active yea"  href="#">Year</a>
+              <a class="nav-link active tri"  href="#">Trivia</a>
+              <a class="nav-link active ran"  href="#">Random</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="staticpics">
+        <div class="pic">
+          <img src="https://www.mathsdesign.com/wp-content/uploads/2018/05/10-10-The-only-number-that-has-the-same-number-of-letters-as-its-meaning-is....jpg" alt="Math Fact 1">
+        </div>
+        <div class="pic">
+          <img src="https://oswalpublishers.com/wp-content/uploads/2023/02/amazing-maths-facts.webp" alt="Math Fact 2">
+        </div>
+        <div class="pic">
+          <img src="https://www.mathsdesign.com/wp-content/uploads/2018/05/33-Zero-is-the-only-number-that-cant-be-represented-in-Roman-numerals..jpg" alt="Math Fact 3">
+        </div>
+        <div class="pic">
+          <img src="https://i0.wp.com/math1089.in/wp-content/uploads/2021/07/image-30.png?resize=595%2C607&ssl=1" alt="Math Fact 4">
+        </div>
+      </div>
+      
+
+    
+      
+      <!-- number facts -->
+      <div class="card number" >
+        <div class="no">
+          <div class="car">
+            <h1>Number Facts</h1>
+            <div class="form-container">
+
+              <form>
+                <input type="text" id="data2" placeholder="Enter any number" /><br>
+                <input type="submit" id="enter2" value="Get Fact" />
+              </form>
+            </div>
+          </div>
+          <div id="result2"></div>
+        </div>
+      </div>
+      <!-- trivia facts -->
+      <div class="card trivia">
+        <div class="no">
+          <div class="car">
+            <h1>Trivia Facts</h1>
+            <div class="form-container">
+              <form>
+                <input type="text" id="data3" placeholder="Enter number" />
+                <input type="submit" id="enter3" value="Get Fact" />
+              </form>
+            </div>
+          </div>
+
+          <div id="result3"></div>
+        </div>
+      </div>
+      <!-- year facts -->
+      <div class="card year">
+        <div class="no">
+          <div class="car">
+            <h1>Year Facts</h1>
+            <div class="form-container">
+              <form>
+                <input type="text" id="data4" placeholder="Enter year" />
+                <input type="submit" id="enter4" value="Get Fact" />
+              </form>
+            </div>
+          </div>
+          <div id="result4"></div>
+        </div>
+      </div>
+      <!-- day facts -->
+      <div class="card day">
+        <div class="no">
+          <div class="car">
+            <h1>Day Facts</h1>
+            <div class="form-container">
+              <form>
+                <input type="text" id="data1" placeholder="month/day" />
+                <input type="submit" id="enter1" value="Get Fact"/>
+              </form>
+            </div>
+          </div>
+          <div id="result1"></div>
+        </div>
+      </div>
+
+      <div class="card rand">
+        <div class="no">
+          <div class="car">
+            <h1><label for="random">Random facts:</label></h1>
+            <input list="random1" id="random" name="random" />
+            <datalist id="random1">
+              <option value="Day"></option>
+              <option value="Math"></option>
+              <option value="Trivia"></option>
+              <option value="Year"></option>
+            </datalist>
+          </div>
+          <div id="result5"></div>
+        </div>
+      </div>
+
+  <script src="numbers.js"></script>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+</body>
+</html> 
+  

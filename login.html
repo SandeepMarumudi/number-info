@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+</style>
+<body>
+    <div id="login">
+        <form>
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Password">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <script>
+        let login=document.forms[0]
+        console.log(login);
+        arr=[]
+        login.addEventListener("submit",function(e){
+           e.preventDefault()
+           let obj={
+            username:e.target[0].value,
+            password:e.target[1].value
+           }
+           arr.push(obj)
+           localStorage.setItem("log",JSON.stringify(arr))
+           let login=confirm("succesfully logined")
+           if(login){
+            window.location.assign("./facts.html")
+           }
+        })
+    </script>
+    
+</body>
+</html>
